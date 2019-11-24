@@ -1,5 +1,5 @@
 # Vim Maximum Awesome Docker
-A docker based vim with almost all the features provided in a modern IDE, the docker makes sure that it's a portable solution 
+A docker based vim with almost all the features provided in a modern IDE. The docker makes sure that it's a portable solution 
 and user don't have to mess around with base dependencies which can be frustating especially autocomplete feature.
 Mounts the user home directory for easy traversal.
 
