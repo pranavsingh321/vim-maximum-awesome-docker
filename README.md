@@ -8,7 +8,7 @@ Uses python:3.7 as base image.
 ## Install
 docker-compose up
 
-### Shortcuts
+### Few Shortcuts
 
 * `,d` brings up [NERDTree](https://github.com/scrooloose/nerdtree), a sidebar buffer for navigating and manipulating files
 * `,z` search files and contents at same time, best for large projects and most commonly used. No need to ctrlp or ag .
