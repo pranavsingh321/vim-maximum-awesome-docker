@@ -1,0 +1,10 @@
+version: "2"
+
+services:
+  vim:
+    build: .
+    image: vim:latest
+    container_name: vim_container
+    volumes:
+      - ~/:~/host_dir/
+    privileged: true
