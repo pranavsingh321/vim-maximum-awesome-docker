@@ -1,45 +1,28 @@
-# Maximum Awesome Linux Port
+# Maximum Awesome Docker Port
 
-* Still somewhat experimental, so use with caution.
-Linux (currently just Ubuntu) port of Maximum Awesome from (https://github.com/square/maximum-awesome).
+Used python:3.7 for base.
 
-## What do you need to do it
-Ubuntu, with `git` and `rake` installed. To get them you could do
-
-```bash
-sudo apt-get install git rake
-```
+## Install
+docker-compose up
 
 ## What's in it?
 
-* [tmux](http://tmux.sourceforge.net/)
-* Awesome syntax highlighting with the [Solarized color scheme](http://ethanschoonover.com/solarized)
+A docker based vim with almost all the features provided in a modern IDE, the docker makes sure that it's a portable solution 
+and user don't have to mess around with base dependencies which can be frustating especially autocomplete feature.
+Mounts the user home directory for easy traversal.
 
 ### vim
 
 * `,d` brings up [NERDTree](https://github.com/scrooloose/nerdtree), a sidebar buffer for navigating and manipulating files
-* `,t` brings up [ctrlp.vim](https://github.com/kien/ctrlp.vim), a project file filter for easily opening specific files
-* `,b` restricts ctrlp.vim to open buffers
-* `,a` starts project search with [ack.vim](https://github.com/mileszs/ack.vim) using [ag](https://github.com/ggreer/the_silver_searcher) (like ack)
+* `,z` search files and contents at same time, best for large projects and most commonly used. No need to ctrlp or ag .
 * `ds`/`cs` delete/change surrounding characters (e.g. `"Hey!"` + `ds"` = `Hey!`, `"Hey!"` + `cs"'` = `'Hey!'`) with [vim-surround](https://github.com/tpope/vim-surround)
-* `\\\` toggles current line comment
+* `spacebar` search current file.
 * `\\` toggles visual selection comment lines
 * `vii`/`vai` visually select *in* or *around* the cursor's indent
 * `,[space]` strips trailing whitespace
 * `^]` jump to definition using ctags
 * `,l` begins aligning lines on a string, usually used as `,l=` to align assignments
 * `^hjkl` move between windows, shorthand for `^w hjkl`
-
-### tmux
-
-* `^a` is the prefix
-* mouse scroll initiates tmux scroll
-* `prefix v` makes a vertical split
-* `prefix s` makes a horizontal split
-
-## Install
-
-    rake
 
 ## Contributing
 
