@@ -1,9 +1,16 @@
 # Vim Maximum Awesome Docker
-A docker based vim with almost all the features provided in a modern IDE. The docker makes sure that it's a portable solution 
-and user don't have to mess around with base/system dependencies which can be frustating at times.
-Mounts the user home directory for easy traversal.
+A docker based vim with almost all the features provided in a modern IDE like 
+* autocompletion
+* file and content search
+* directory navigation
+* git integration etc.
 
 Uses python:3.7 as base image.
+
+## Usecase
+* Most python based projects use pipenv which breaks vim autocompletion and other features as pipenv installation dir is not used by vim. With container all the modules can be installed globally.
+* Vim plugins fails due to system dependencies or due to incompatibilities with existing OS platform.
+* Complete setup of vim is still tedious/time consuming.
 
 ## Install
 docker-compose up
