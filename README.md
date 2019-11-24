@@ -1,17 +1,14 @@
 # Vim Maximum Awesome Docker
-
-Used python:3.7 for base.
-
-## Install
-docker-compose up
-
-## What's in it?
-
 A docker based vim with almost all the features provided in a modern IDE, the docker makes sure that it's a portable solution 
 and user don't have to mess around with base dependencies which can be frustating especially autocomplete feature.
 Mounts the user home directory for easy traversal.
 
-### vim
+Uses python:3.7 as base image.
+
+## Install
+docker-compose up
+
+### Shortcuts
 
 * `,d` brings up [NERDTree](https://github.com/scrooloose/nerdtree), a sidebar buffer for navigating and manipulating files
 * `,z` search files and contents at same time, best for large projects and most commonly used. No need to ctrlp or ag .
